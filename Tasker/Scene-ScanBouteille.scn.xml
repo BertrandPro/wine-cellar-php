@@ -1,0 +1,146 @@
+<TaskerData sr="" dvi="1" tv="4.8u5m">
+	<dmetric>1440.0,2560.0</dmetric>
+	<Scene sr="sceneScanBouteille">
+		<cdate>1356300106240</cdate>
+		<edate>1477851969685</edate>
+		<gridSize>18</gridSize>
+		<heightLand>-1</heightLand>
+		<heightPort>1026</heightPort>
+		<nme>ScanBouteille</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>720</widthPort>
+		<ImageElement sr="elements0" ve="2">
+			<flags>6</flags>
+			<geom>0,0,719,1026,0,0,620,926</geom>
+			<Str sr="arg0" ve="3">Image1</Str>
+			<Img sr="arg1" ve="2"/>
+			<Int sr="arg2" val="255"/>
+			<Str sr="arg3" ve="3">#</Str>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">%ICONEVIN</Str>
+				<Str sr="arg3" ve="3">#77333333</Str>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</ImageElement>
+		<ImageElement sr="elements1" ve="2">
+			<clickTask>327</clickTask>
+			<flags>4</flags>
+			<geom>90,288,182,181,2,276,136,133</geom>
+			<Str sr="arg0" ve="3">Etati3</Str>
+			<Img sr="arg1" ve="2">
+				<nme>hd_content_new</nme>
+			</Img>
+			<Int sr="arg2" val="255"/>
+			<Str sr="arg3" ve="3">#FF0099CC</Str>
+		</ImageElement>
+		<TextElement sr="elements2" ve="3">
+			<flags>4</flags>
+			<geom>126,72,450,145,162,0,292,117</geom>
+			<Str sr="arg0" ve="3">Cave</Str>
+			<Str sr="arg1" ve="3">CELLIER</Str>
+			<Int sr="arg2" val="23"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<ImageElement sr="elements3" ve="2">
+			<clickTask>325</clickTask>
+			<flags>4</flags>
+			<geom>450,288,180,180,5,422,132,132</geom>
+			<Str sr="arg0" ve="3">Image7</Str>
+			<Img sr="arg1" ve="2">
+				<nme>hd_av_download</nme>
+			</Img>
+			<Int sr="arg2" val="255"/>
+			<Str sr="arg3" ve="3">#FF0099CC</Str>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</ImageElement>
+		<ButtonElement sr="elements4" ve="3">
+			<clickTask>329</clickTask>
+			<flags>4</flags>
+			<geom>252,576,234,216,230,498,159,160</geom>
+			<Str sr="arg0" ve="3">Bouton1</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>hd_ab_navigation_accept</nme>
+			</Img>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#F3070000</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">MenuCave</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task325">
+		<cdate>1409935645208</cdate>
+		<edate>1409935645208</edate>
+		<id>325</id>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">PostRetrait</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task327">
+		<cdate>1477687668155</cdate>
+		<edate>1477687668155</edate>
+		<id>327</id>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">PostAjout</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task329">
+		<cdate>1477688032293</cdate>
+		<edate>1477688032293</edate>
+		<id>329</id>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">ScanBouteille</Str>
+		</Action>
+	</Task>
+</TaskerData>

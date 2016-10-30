@@ -9,8 +9,8 @@
 
 <div class="header">
 	<input type="text" id="searchKey"/>
-	<button id="btnSearch">Search</button>
-	<button id="btnAdd">New Wine</button>
+	<button id="btnSearch">Recherche</button>
+	<button id="btnAdd">Nouvelle bouteille</button>
 </div>
 
 
@@ -25,20 +25,26 @@
 <label>Id:</label>
 <input id="wineId" name="id" type="text" disabled />
 
-<label>Name:</label>
-<input type="text" id="name" name="name" required>
+<label>EAN:</label>
+<input type="text" id="EAN" name="EAN" type="text" />
 
-<label>Grapes:</label>
-<input type="text" id="grapes" name="grapes"/>
+<label>Nom:</label>
+<input type="text" id="nom" name="nom" required>
 
-<label>Country:</label>
-<input type="text" id="country" name="country"/>
+<label>Annee:</label>
+<input type="text" id="annee" name="annee"/>
+
+<label>Emplacement:</label>
+<input type="text" id="emplacement" name="emplacement"/>
+
+<label>Pays:</label>
+<input type="text" id="pays" name="pays"/>
 
 <label>Region:</label>
 <input type="text" id="region" name="region"/>
 
-<label>Year:</label>
-<input type="text" id="year" name="year"/>
+<label>Quantite:</label>
+<input type="text" id="nombre" name="nombre"/>
 
 <button id="btnSave">Save</button>
 <button id="btnDelete">Delete</button>
@@ -50,7 +56,7 @@
 <img id="pic" height="300"/>
 
 <label>Notes:</label>
-<textarea id="description" name="description"></textarea>
+<textarea id="description" nom="description"></textarea>
 </div>
 
 </form>
