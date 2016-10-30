@@ -18,3 +18,8 @@ Set Up:
 4. Open api/index.php. In the getConnection() function at the bottom of the page, make sure the connection parameters match your database configuration. 
 5. Open main.js and make sure the rootURL variable matches your deployment configuration.
 6. Access the application in your browser. For example: http://localhost/cellar.
+
+Fork by Guiguiabloc
+
+- add EAN, Quantity entry
+- modify search API
