@@ -56,9 +56,9 @@ class index:
           return web.badrequest()
         if data == "":
           return web.badrequest()
-        print tokenreceived
+        print filenamereceived
         b64response = base64.b64encode(data)
-        fh = open(winepics+tokenreceived+".png", "wb")
+        fh = open(winepics+filenamereceived+".png", "wb")
         fh.write(b64response.decode('base64'))
         fh.close()
         return "200 STORED"
