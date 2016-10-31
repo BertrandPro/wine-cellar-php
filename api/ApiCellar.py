@@ -89,7 +89,7 @@ class addean:
           print "Number of rows updated: %d" % cur.rowcount
           con.close()
 
-class minusean:
+class removeean:
     def POST(self,uri):
         try :
           ID = web.data()
