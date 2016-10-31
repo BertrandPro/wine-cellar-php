@@ -23,3 +23,6 @@ Fork by Guiguiabloc
 
 - add EAN, Quantity entry
 - modify search API
+- add Python API to work with Tasker
+- add Tasker files
+

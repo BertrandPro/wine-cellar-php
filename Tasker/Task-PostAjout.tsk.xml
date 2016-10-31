@@ -8,7 +8,7 @@
 		<Action sr="act0" ve="7">
 			<code>116</code>
 			<Str sr="arg0" ve="3">localhost:2020</Str>
-			<Str sr="arg1" ve="3">/sendean</Str>
+			<Str sr="arg1" ve="3">/addean</Str>
 			<Str sr="arg2" ve="3">%ABMESSAGE</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>

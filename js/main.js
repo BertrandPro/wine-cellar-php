@@ -93,7 +93,7 @@ function findById(id) {
 		dataType: "json",
 		success: function(data){
 			$('#btnDelete').show();
-			console.log('findById success: ' + data.name);
+			console.log('findById success: ' + data.nom);
 			currentWine = data;
 			renderDetails(currentWine);
 		}
@@ -129,6 +129,7 @@ function updateWine() {
 		data: formToJSON(),
 		success: function(data, textStatus, jqXHR){
 			alert('Wine updated successfully');
+                        location.reload(true);
 		},
 		error: function(jqXHR, textStatus, errorThrown){
 			alert('updateWine error: ' + textStatus);
@@ -143,6 +144,7 @@ function deleteWine() {
 		url: rootURL + '/' + $('#wineId').val(),
 		success: function(data, textStatus, jqXHR){
 			alert('Wine deleted successfully');
+                        location.reload(true);
 		},
 		error: function(jqXHR, textStatus, errorThrown){
 			alert('deleteWine error');
@@ -156,17 +158,19 @@ function renderList(data) {
 
 	$('#wineList li').remove();
 	$.each(list, function(index, wine) {
-		$('#wineList').append('<li><a href="#" data-identity="' + wine.id + '">'+wine.name+'</a></li>');
+		$('#wineList').append('<li><a href="#" data-identity="' + wine.id + '">'+wine.nom+'</a></li>');
 	});
 }
 
 function renderDetails(wine) {
 	$('#wineId').val(wine.id);
-	$('#name').val(wine.name);
-	$('#grapes').val(wine.grapes);
-	$('#country').val(wine.country);
+	$('#nom').val(wine.nom);
+	$('#EAN').val(wine.EAN);
+	$('#emplacement').val(wine.emplacement);
+	$('#pays').val(wine.pays);
 	$('#region').val(wine.region);
-	$('#year').val(wine.year);
+	$('#annee').val(wine.annee);
+	$('#nombre').val(wine.nombre);
 	$('#pic').attr('src', 'pics/' + wine.picture);
 	$('#description').val(wine.description);
 }
@@ -175,11 +179,13 @@ function renderDetails(wine) {
 function formToJSON() {
 	return JSON.stringify({
 		"id": $('#wineId').val(), 
-		"name": $('#name').val(), 
-		"grapes": $('#grapes').val(),
-		"country": $('#country').val(),
+		"nom": $('#nom').val(), 
+		"EAN": $('#EAN').val(), 
+		"emplacement": $('#emplacement').val(),
+		"pays": $('#pays').val(),
 		"region": $('#region').val(),
-		"year": $('#year').val(),
+		"annee": $('#annee').val(),
+		"nombre": $('#nombre').val(),
 		"picture": currentWine.picture,
 		"description": $('#description').val()
 		});
