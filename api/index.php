@@ -109,7 +109,7 @@ function deleteWine($id) {
 }
 
 function findByName($query) {
-	$sql = "SELECT * FROM wine WHERE UPPER(nom) LIKE :query OR UPPER(region) LIKE :query ORDER BY nom";
+	$sql = "SELECT * FROM wine WHERE UPPER(nom) LIKE :query OR UPPER(region) LIKE :query OR annee LIKE :query ORDER BY nom";
 	try {
 		$db = getConnection();
 		$stmt = $db->prepare($sql);
