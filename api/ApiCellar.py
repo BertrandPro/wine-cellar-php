@@ -50,7 +50,7 @@ class index:
           filenamereceived = web.cookies().filename
         except:
           filenamereceived == "generic"
-       try :
+        try :
           data = web.data()
         except:
           return web.badrequest()
