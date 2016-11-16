@@ -9,6 +9,7 @@ import sys,re
 import json, web
 import urllib, urllib2
 import base64
+import MySQLdb
 from Daemon import Daemon
 
 ##########
@@ -23,7 +24,7 @@ winepics = '/var/www/cellar/pics/'
 
 # MySQL
 mysqlhost="localhost" # your host, usually localhost
-mysqluser="cellar",   # your username
+mysqluser="cellar"   # your username
 mysqlpasswd="cellar"  # your password
 mysqldb="cellar"      # name of the data base
 
